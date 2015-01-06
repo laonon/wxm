@@ -1,0 +1,18 @@
+/* 按钮 */
+.btn { display: block; width: 100%; text-align: center; border-radius: 0.3rem; height: 3.8rem; line-height: 3.8rem;  color: $txtColorD; }
+.btn-disable { background-color: #ededed;border-color:$lineColorA;color:$txtColorC;}
+.btn:focus { outline: none; }
+.btn:active { opacity: 0.8; }
+
+/* 按颜色分类 */
+.btn-default{ border: 1px solid;border-color: $lineColorA; background: $baseBgA;color: $txtColorA; }
+.btn-red { border-color: $lineColorG; background: $baseBgG; }
+.btn-green {border-color: $lineColorE; background: $baseBgE; }
+.btn-blue {border-color: $lineColorF; background: $baseBgF; }
+.btn-white { border-color:$lineColorA; background: $baseBgA;color: $txtColorA; }
+.btn-orange { border-color: $lineColorH; background: $baseBgH; }
+/* 按用途分类 */
+.btn-link {color: $txtColorE;border:none;background-color: none;}
+/* 按照大小分类 */
+.btn-small {display:inline-block;width:7.2rem;height:2.6rem;line-height: 2.6rem;font-size: 1.2rem;}
+.btn-mini {display:inline-block;width:auto;height:2rem;line-height: 2rem;padding:0 1rem;border-radius: 2rem;background-color: $baseBgB;font-size: 1.2rem}

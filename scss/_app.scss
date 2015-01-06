@@ -1,0 +1,399 @@
+@charset 'utf-8';
+/*注册&登录*/
+.login-page .logo-box{padding:3rem 0;text-align: center;}
+.login-page .logo-box .logo{width:7.6rem;height:7.6rem;line-height: 7.6rem;margin: 0 auto;border-radius: 50%;background-color: $baseBgF;}
+.login-page .login-box{margin-top: 1rem;padding:0 1rem;}
+.login-page .login-box .tit .icon{padding:0 1rem;}
+.login-page .add-info{position:relative;margin: 7.4rem 1rem 0;border-top:1px solid $lineColorB;}
+.login-page .add-info .legend{position:absolute;padding: 0 1rem;left:50%;top:-0.5em;background-color: $baseBgC;-webkit-transform: translateX(-50%)}
+.login-page .add-info .other-accounts{padding:2.5rem;}
+.login-page .add-info .other-accounts .box-col{text-align: center;}
+.login-page .add-info .other-accounts .account-box{position:relative;display:inline-block;width:4rem;height:4rem;border-radius: 50%;}
+.login-page .add-info .other-accounts .weixin{background-color: #00cc00;}
+.login-page .add-info .other-accounts .weibo{background-color: #ffd791;}
+.login-page .add-info .other-accounts .qq{background-color: #20ade6;}
+.login-page .tips{padding:0 1rem;margin-top: 2rem;color:$txtColorB;text-align: center;}
+.login-page .num-box{padding: 3rem;font-size: 1.6rem;text-align: center;}
+.login-page .verification .input{text-align: center;}
+.login-page .sure-password .li-item .tit{width:10rem;min-width: 0;}
+.login-page .sure-password .li-item>.box-col{padding-left: 0;}
+/*其它帐号*/
+.login-page .account{position:absolute;display:inline-block;width:3.3rem;height:3.3rem;background:url(../img/common/other_account.png) 0 0 no-repeat;background-size: 3.3rem 10.1rem;vertical-align: middle;top:50%;left:50%;-webkit-transform: translate(-50%,-50%);}
+.login-page .account-weixin{background-position: 0 0;}
+.login-page .account-weibo{background-position: 0 -3.4rem;}
+.login-page .account-qq{background-position: 0 -6.8rem;}
+/* 场馆信息列表 */
+.venue-box .venue-item {padding:1.5rem 1rem;border-bottom: 1px solid $lineColorC;}
+.venue-box .item-list .price strong{font-weight: bold;font-size: 1.6rem;padding:0 0.2rem;}
+.venue-box .item-list .icon{margin-left: 0.5rem;padding:0.3rem;background-color: #cfe4fc;color:$txtColorF;border-radius: 50%;}
+.venue-box .item-list .item-minor,
+.venue-box .item-list .item-other{padding-top: 0.8rem;}
+
+/*场馆信息*/
+.venue-info .scrollable{padding-bottom: 6.5rem;}
+.venue-info .venue-main .icon{color:$txtColorE;margin-right: 0.5rem;}
+.venue-info .item-main,
+.venue-info .item-minor,
+.venue-info .item-other{font-weight: normal;font-size: 1.3rem;color:$txtColorA;}
+
+/*标签*/
+.tag-box .box-col{margin-bottom: 1rem;text-align: left;}
+.tag-box .tag{display:inline-block;padding:0.3rem 1.2rem;border-radius: 1.4rem;background-color: #ececec;color:$txtColorB;}
+
+/*场地服务*/
+.venue-service .media-box,
+.venue-service .media-txt{text-align: center;}
+.venue-service .media-box{padding:0 0 1.4rem;color:$txtColorB;}
+
+/*场地服务*/
+.venue-coach .media-box,
+.venue-coach .media-txt{text-align: center;margin-bottom: 0.4rem;}
+.venue-coach .media-box{width:6.2rem;height:6.2rem;margin: 0 auto 0.5rem;padding:0.2rem;color:$txtColorB;border:1px solid $lineColorC;border-radius: 50%;}
+.venue-coach .media-box img{width:6.2rem;height:6.2rem;border-radius: 50%;}
+.venue-coach .coach-box{padding:0 1rem;}
+
+/*留言*/
+.message-box .message{margin-bottom: 1rem;}
+.message-box .media-box{display:inline-block;width:3.8rem;height:3.8rem;padding:0.2rem;border:1px solid $lineColorA;border-radius: 50%;vertical-align: top;}
+.message-box .media-box img{width:100%;height:100%;border-radius: 50%;}
+.message-box .box-col{
+	@include flexbox;
+	@include alignItems(center);
+    @include justifyContent(flex-start);
+}
+.message-box .message-txt{position:relative;display:inline-block;margin-left: 1rem;padding:0.6rem 1rem;line-height: 1.125em;background-color: $baseBgC;border:1px solid $lineColorA;border-radius: 0.4rem;vertical-align: top;}
+.message-box .message-txt:after{position:absolute;content:" ";width:0.6rem;height:0.6rem;background-color: $baseBgC;border:1px solid $lineColorA;border-right: 0;border-bottom: 0;left:-0.4rem;top:50%;-webkit-transform: translate(0,-50%) rotate(-45deg) skew(20deg,20deg);}
+
+/*发布培训*/
+.pub-train .card-box{padding: 0 1rem;}
+.pub-train .card-cont{padding: 0 1rem;}
+.pub-train .input{border:none;height:1.2em;line-height: 1.2em;padding:0 0.5rem;}
+.pub-train table td{height:3.3rem;line-height: 3.3rem;text-align: center;border-color: $lineColorC;}
+.pub-train table td.active{color:$txtColorD;background-color: $baseBgE;}
+.pub-train .icon{color:$txtColorE;}
+.pub-train .btn-box{padding:1rem;}
+
+/*报名培训*/
+.course-list .mod-media{height:6rem;}
+.course-list .mod-media .media-txt{width:6.4rem;color:$txtColorB;}
+.course-list .item-main{font-weight: normal;font-size: 1.2rem;}
+.course-list .item-main span{padding: 0 0.2rem 0 0;}
+.course-list .course-item{padding: 1.5rem 1rem  4.6rem;border-bottom: 1px solid $lineColorB;}
+.course-list .course-item.editable{-webkit-transform: translateX(-5.6rem);}
+.course-list .course-item.editable:after{position:absolute;width:5.6rem;height:100%;line-height: 9.7rem;content:"删除";background-color: $baseBgG;top:0;right:-5.6rem;color:$baseBgA;vertical-align: middle;text-align: center;}
+.course-list .media-graphic .opt-b{bottom:-3.2rem}
+.course-list .tit{width:2.4rem;}
+.course-list .cont{line-height: 1.4em;}
+.course-list .item-minor{padding-top: 0.5rem;}
+.course-list .item-other{padding-top: 0.3rem;}
+.course-list .item-other .cont>span{padding-right: 1rem;}
+.course-list .item-other:nth-child(2){padding-top: 0.8rem;}
+.course-list .btn-mini{padding: 0 2rem;border:0;background-color: $lineColorC;}
+.course-list .btn-mini[node-type="pending"]{color:$txtColorH;}
+.course-list .btn-mini[node-type="pass"]{color:$txtColorF;}
+.course-list .btn-mini[node-type="go"]{color:$txtColorA;}
+.course-list .btn-mini[node-type="vote"]{color:$txtColorG;}
+.course-list .btn-mini[node-type="pay"]{color:$txtColorD;background-color: $baseBgH;}
+.course-list .btn-mini[node-type="disable"]{color:$txtColorB;}
+
+/*我的培训*/
+.my-train .tab-bar{margin:1rem;border: 1px solid $lineColorA;border-radius: 0.3rem;}
+.my-train .tab-bar .tab-tit:after{display:none;}
+.my-train .tab-bar .tab-tit{border-right: 1px solid $lineColorA;}
+.my-train .tab-bar .tab-tit:last-child{border-right: 0;}
+.my-train .tab-bar .tab-tit.active{background-color: $baseBgE;color:$txtColorD;}
+
+/*培训详情*/
+.train-detail .course-item{border-bottom: 0;}
+.train-detail .btn-box{margin-top: 2rem;}
+.train-detail .btn-box ,
+.train-detail .btn-box .box-col{padding:0 0.5rem;}
+.train-detail .tips{margin-top: 3.5rem;padding: 0 2rem;}
+
+/*支付订单*/
+.pay-order .lists li,
+.pay-order .lists .media-graphic .item-list{padding-left: 0;}
+.pay-order .price-all{padding:0 1rem;}
+/*乐动*/
+.ledong{background: $baseBgA url(../img/common/ledong_bg.png) center bottom no-repeat;background-size: 100%;}
+.ledong .slide-box{position:relative;height:13.4rem;margin:1rem;overflow:hidden;}
+.ledong .slide-box .img-list,
+.ledong .slide-box .img-list li{height:100%;}
+.ledong .slide-box .num-list{position:absolute;bottom:0.5rem;left:50%;-webkit-transform: translateX(-50%);}
+.ledong .slide-box .num-list li{width:1rem;height:1rem;margin:0 0.5rem;border-radius: 50%;background-color: $baseBgC;}
+.ledong .slide-box .num-list li.active{background-color: $baseBgB;}
+
+.ledong .plate-box {width:100%;padding:1rem;box-sizing: border-box;}
+.ledong .plate-box .plate-line{margin-bottom: 1rem;}
+.ledong .plate-box .plate-line > div{box-sizing: border-box;}
+.ledong .plate-box .plate-line .inner{display:block;height:12rem;border-radius: 0.3rem;}
+.ledong .plate-box .plate-find{width:55%;padding-right: 1rem;}
+.ledong .plate-box .plate-find .inner{background:#96ddff url(../img/common/plate_find.png) center center no-repeat;background-size: 11.7rem 7rem;}
+.ledong .plate-box .plate-venues{width:45%;}
+.ledong .plate-box .plate-venues .inner{background:#f0697c url(../img/common/plate_venues.png) right center no-repeat;background-size: 12rem 7.1rem;}
+.ledong .plate-box .plate-sport{width:45%;}
+.ledong .plate-box .plate-sport .inner{background:#62e092 url(../img/common/plate_sport.png) right top no-repeat;background-size: 12.3rem 8.2rem}
+.ledong .plate-box .plate-my{width:55%;padding-left: 1rem;}
+.ledong .plate-box .plate-my .inner{background:#fed957 url(../img/common/plate_my.png) center center no-repeat;background-size: 12.8rem 5.9rem;}
+
+/*找教练*/
+.find-coach {background-color: $baseBgA;}
+.find-coach .tab-bar{border-top:0;}
+.coach-box .coach-item{border-bottom:1px solid $lineColorA; }
+.coach-box .coach-item .rank{margin: 0 2rem 0 1rem;}
+.coach-box .coach-item .rank .icon{margin:0 0.1rem;}
+
+/*教练主页*/
+.coach-home .carousel-box{position:relative;height:19rem;}
+.coach-home .panel{width:100%;height:100%;}
+.coach-home .panel img{min-width: 100%;height: 100%;}
+.coach-home .switch {position:absolute;width:100%;height:6.4rem;background-color: rgba(0,0,0,0.5);bottom:0;box-sizing: border-box;padding:0.7rem 0.8rem;}
+.coach-home .switch .switch-item{width:7.4rem;height:4.9rem;margin-right: 1.1rem;border:1px solid #fff;overflow:hidden;}
+.coach-home .switch .switch-item:last-child{margin-right: 0;}
+.coach-home .switch .switch-item img{width:100%;height:100%;}
+.coach-home .info-item{position:relative;padding:0.8rem 1rem;}
+.coach-home .info-item>span{display:inline-block;margin-right: 0.5rem;vertical-align: middle;}
+.coach-home .info-item .plus{color:$txtColorC;}
+.coach-home .accumulate-teach .box-col{border-right: 1px solid $lineColorB;text-align: center;line-height: 1.5em;}
+.coach-home .accumulate-teach .box-col:last-child{border-right: 0;}
+.coach-home h4.card-tit{color:$txtColorA;}
+.coach-home .card-cont .cont-item{font-size: 1.2rem;line-height: 1.5em;color:$txtColorB;}
+.coach-home .teach-course .card-cont{overflow:auto;}
+.coach-home .teach-course .card-cont table{width:auto;}
+.coach-home .teach-course .card-cont table td{width:5rem;line-height: 1.2em;padding:0.5rem 0;}
+.coach-home .teach-place .ok-sign{font-size: 1.8rem;}
+.coach-home .tag-box .box-col{width:auto;margin-right: 1rem;}
+.coach-home .tips{margin:2rem 0 0;text-align: center;}
+.coach-home .btn-box{margin-top: 1rem;}
+
+/*预约教练&订单详情*/
+.reserve-coach .plus,
+.order-detail .plus{color:$txtColorB;font-size: 2rem;}
+.reserve-coach .coach-info .tag,
+.order-detail .coach-info .tag{margin-right: 0.6rem;}
+.reserve-coach .rank,
+.order-detail .rank{padding-left: 0.6rem;}
+.reserve-coach .rank .icon,
+.order-detail .rank .icon{font-size: 1rem;margin:0 0.1rem;}
+.reserve-coach .card-box,
+.order-detail .card-box{padding: 0 1rem;}
+.reserve-coach .card-box:first-child,
+.order-detail .card-box:first-child{padding:1rem;}
+.reserve-coach .li-item .tit,
+.reserve-coach .li-item .box-col,
+.order-detail .li-item .tit,
+.order-detail .li-item .box-col{line-height: 2.8rem;}
+.reserve-coach .li-item .box-col .btn,
+.order-detail .li-item .box-col .btn{margin-right: 1rem;}
+.reserve-coach .coach-info .item-main,
+.order-detail .coach-info .item-main{margin-top: 1rem;}
+.reserve-coach .course-info .box-col,
+.order-detail .course-info .box-col{padding-left: 3rem;}
+.reserve-coach .course-info .add-tip,
+.order-detail .course-info .add-tip{margin-top: 1rem;font-size: 1.2rem;}
+.reserve-coach .course-info .add-tip p,
+.order-detail .course-info .add-tip p{position:relative;padding-left: 1.5rem;line-height: 1.3em;}
+.reserve-coach .course-info .add-tip p em,
+.order-detail .course-info .add-tip p em{position:absolute;left:0;top:0.3rem;}
+.reserve-coach .tips,
+.order-detail .tips{padding:1rem;line-height: 1.5em;color:$txtColorB;font-size: 1.2rem;}
+
+/*地点选择*/
+.site-choose .choose-site .site-box .box-col{text-align: center;}
+.site-choose .choose-site .box-col .btn{width:9.5rem;height:4.4rem;line-height: 4.4rem;}
+.site-choose .choose-site .txt{margin-top: 1.5rem;line-height: 1.5em;font-size: 1.2rem;}
+.site-choose .choose-site .ok-sign{font-size: 1.8rem;}
+.site-choose .site-list .lists li,
+.site-choose .site-list .media-graphic .item-list{padding-left: 0;}
+.site-choose .site-list .item-other{padding-top: 0.3rem;}
+.site-choose .site-list .line-bottom{border-color: $lineColorB;}
+.site-choose .on-site,
+.site-choose .tips,
+.site-choose .txt{margin-top: 1.5rem;font-size: 1.2rem;}
+.site-choose .on-site .box-col>div{line-height: 1.5em;}
+
+/*我的乐动&编辑资料&个人信息*/
+.my-ledong .card-box,
+.edit-info .card-box,
+.user-info .card-box{padding:0 1rem;}
+.my-ledong .my-info,
+.edit-info .my-info,
+.user-info .my-info{padding:1rem;}
+.my-ledong .my-info .item-main{margin-top:1rem; }
+.my-ledong .unlogin .item-main{margin-top: 2rem;}
+.edit-info .my-info .item-main,
+.user-info .my-info .item-main{margin-top: 2rem;font-weight: normal;color:$txtColorB;}
+.my-ledong .li-item,
+.edit-info .li-item,
+.user-info .li-item{position:relative;}
+.my-ledong .li-item .tit{width:2.4rem;min-width: 0;padding: 0 1.5rem 0 0.6rem;}
+.edit-info .li-item .tit,
+.user-info .li-item .tit{width:3rem;}
+.my-ledong .li-item>.box-col,
+.edit-info .li-item>.box-col,
+.user-info .li-item>.box-col{padding-left: 0;line-height: 2.2rem;color:$txtColorB;}
+.edit-info .li-item>.box-col,
+.user-info .li-item>.box-col{text-align: right;padding-right: 2rem;}
+.my-ledong .li-item .icon,
+.edit-info .li-item .icon,
+.user-info .li-item .icon{color:$txtColorB;font-size: 2rem;}
+.edit-info .media-graphic .item-list,
+.user-info .media-graphic .item-list{padding-left: 0;}
+.edit-info .media-graphic .plus,
+.user-info .media-graphic .plus{position:static;width:auto;margin-left: 1.8rem;-webkit-transform: translate(0,0);text-align: right;}
+.my-ledong .train-total{padding:1.5rem 0; }
+.my-ledong .train-total .box-col{border-right:1px solid $lineColorB;}
+.my-ledong .train-total .box-col div{line-height: 2em;text-align: center;}
+.my-ledong .my-plate{padding:1.5rem 1rem;}
+.my-ledong .my-plate .layout-flexbox:first-child{margin-bottom: 2rem;}
+.my-ledong .my-plate .box-col{position:relative;height:8.6rem;margin: 0 1rem;border-radius: .3rem;background:url(../img/common/plate_bg.png) 0 0 no-repeat;background-size: 14.2rem 43.2rem;}
+.my-ledong .my-plate .box-col:first-child{margin: 0 1rem 0 0;}
+.my-ledong .my-plate .box-col:last-child{margin: 0 0 0 1rem;}
+.my-ledong .my-plate .plate-course{background-color: #7cd225;background-position: 0 0;}
+.my-ledong .my-plate .plate-order{background-color: #54b7d6;background-position: 0 -8.6rem;}
+.my-ledong .my-plate .plate-wait{background-color: #ff8c04;background-position: 0 -17.2rem;}
+.my-ledong .my-plate .plate-train{background-color: #ff425d;background-position: 0 -25.8rem;}
+.my-ledong .my-plate .plate-set{background-color: #ffcc1b;background-position: 0 -34.4rem;}
+
+/*私教订单*/
+.mycoach-order .opt-r{color:$baseBgE;}
+.mycoach-order .tab-bar{margin:1rem;border:1px solid $lineColorA;border-radius:.3rem;}
+.mycoach-order .tab-bar .tab-tit.active{background-color:$baseBgE;color:$txtColorD;}
+.mycoach-order .tab-bar .tab-tit{border-right:1px solid $lineColorA;}
+.mycoach-order .tab-bar .tab-tit:after{display:none;}
+.mycoach-order .course-list .course-item{padding: 1.5rem 1rem;}
+.mycoach-order .course-list .media-graphic .opt-b{bottom:0;}
+.mycoach-order .course-item div{font-size: 1.4rem;}
+.mycoach-order .course-item .item-main{font-size: 1.6rem;}
+.mycoach-order .course-item .item-other{padding-top: 0.6rem;}
+.mycoach-order .course-item .item-other em{font-size: 1.6rem;}
+
+/*订单详情*/
+.order-detail .course-info{padding:0 1rem;}
+.order-detail .media-graphic .plus{width:auto;}
+.order-detail .clock{margin-right: 1rem;}
+.order-detail .add-info .btn{margin-left: 1rem;}
+
+/*确认上课*/
+.comment-course .comment-info{padding: 0 1rem;}
+.comment-course .rank .icon{font-size: 1rem;margin-right: 0.2rem;}
+.comment-course .comment-info .rank .icon{font-size: 1.8rem;}
+.comment-course .coach-impression .btn-small{width:auto;height:auto;line-height: 1em;padding:0.8rem;margin:0 1rem 1rem 0;}
+.input-comment textarea{border:0;}
+.input-comment .add-tip{text-align: right;color:$txtColorB;}
+.input-comment .add-tip.error{color:$txtColorG;}
+
+/*快速预约*/
+.quick-reserve .train-info .btn-small{width:auto;height:auto;line-height: 1em;padding:0.8rem;margin:0 1rem 1rem 0;}
+.quick-reserve .train-info .card-tit{padding-bottom: 1rem;}
+.quick-reserve .train-info .card-cont{}
+.quick-reserve .course-info,
+.quick-reserve .like-coach{padding:0 1rem;}
+
+/*培训地点*/
+.train-place .train-area,
+.train-place .train-site{padding:0 1rem;}
+
+/*预约中*/
+.reserve-ing .card-box{padding:2rem;}
+.reserve-ing .result_box{position: relative;width: 14rem;height: 14rem;margin:0 auto;background: #9de850;border-radius: 50%;border:1px solid $lineColorB;}
+.reserve-ing .result_box .circleA{position: absolute;width: 14rem;height: 14rem;clip:rect(0,14rem,14rem,7rem);}
+.reserve-ing .result_box .circleAA{content: " ";position: absolute;width: 14rem;height: 14rem;border-radius: 50%;background: #f1f0f0;clip:rect(0,14rem,14rem,7rem);-webkit-transition:-webkit-transform .5s linear; -webkit-transform:translateZ(0) rotate(0);transition:transform .5s linear; transform: translateZ(0) rotate(0);}
+.reserve-ing .result_box .circleB{position: absolute;width: 14rem;height: 14rem;clip:rect(0,7rem,14rem,0);}
+.reserve-ing .result_box .circleBB{content: " ";position: absolute;width: 14rem;height: 14rem;border-radius: 50%;background: #f1f0f0;clip:rect(0,7rem,14rem,0);-webkit-transition:-webkit-transform .5s linear 0.5s; -webkit-transform:translateZ(0) rotate(0);transition:transform .5s linear 0.5s; transform: translateZ(0) rotate(0);}
+.reserve-ing .result_box .mask{position: absolute;width: 12rem;height: 12rem;left: 50%;top:50%;margin: -6rem 0 0 -6rem;border-radius: 50%;text-align: center;background-color: $baseBgA;border:1px solid $lineColorB;}
+.reserve-ing .result_box .percent{margin-top: 3.8rem;font-size: 1.4rem;font-weight: bold;}
+.reserve-ing .add-tip{margin-top: 3rem;color:$txtColorB;}
+.reserve-ing .add-tip p{line-height: 1.5em;}
+
+/*预约结果*/
+.reserve-result .header .opt-r{width:7.2rem;}
+.reserve-result .coach-box{padding:1.5rem 1rem;}
+.reserve-result .coach-box .coach-item{padding: 0;border-bottom: 0;}
+.reserve-result .course-list .mod-media{height:auto;}
+.reserve-result .btn-box{padding:0;}
+
+/*申请成为教练*/
+.apply-coach .card-box{padding:0 1rem;}
+.apply-coach .tips{padding: 2rem 1rem;line-height: 1.4em;color:$txtColorB;}
+.apply-coach .li-item .box-col{text-align: right;padding-right: 2rem;}
+.apply-coach .apply-step .li-item{border-bottom: 0;}
+.apply-coach .apply-step .li-item .tit{position:relative;min-width: 0;padding:0 2rem 0 1rem;}
+.apply-coach .apply-step .li-item .ok-sign{color:$txtColorC;}
+.apply-coach .apply-step .li-item .tit:after{position:absolute;content:" ";width:100%;height:2.9rem;border-left: 0.2rem solid $txtColorC;left:2rem;top:2.1rem;}
+.apply-coach .apply-step .li-item:last-child .tit:after{top:-2.6rem;}
+.apply-coach .apply-step .li-item.active .tit:after{border-left-color: $txtColorE;}
+.apply-coach .apply-step .li-item.active .ok-sign{color:$txtColorE;}
+.apply-coach .apply-step .icon{font-size: 2.4rem;}
+.apply-coach .apply-step .li-item .box-col{text-align: left;padding-left: 0;}
+
+/*个人信息*/
+.user-info .li-item .box-col .input{text-align: right;}
+
+/*执教经历*/
+.coach-experience .card-box{padding: 0 1rem;}
+.coach-experience .li-item .li-item:first-child{padding: 0 0 1.5rem;border-bottom: 0;}
+.coach-experience .li-item .li-item:last-child{margin-left: 5.6rem;padding: 1.5rem 0 0;border-top:1px solid $lineColorB;}
+.coach-experience .reward-info .btn-box{padding: 0;}
+.coach-experience .reward-info .btn-add,
+.coach-experience .reward-info .btn-add:after{position:relative;display:inline-block;width:4.1rem;height:4.1rem;background-color: $baseBgB;border-radius: 0.3rem;color:$txtColorD;margin-right: 1rem;line-height: 4.1rem;text-align: center;font-size: 3rem;}
+.coach-experience .reward-info .btn-add:after{position:absolute;top:0;left:0;content:"+";font-family: 'Arial';}
+
+/*身份认证*/
+.identity-authenticate .card-box{padding: 0 1rem;}
+.identity-authenticate .mod-tips{padding:1.5rem;}
+.identity-authenticate input.file{position:relative;width:18rem;height:18rem;}
+.identity-authenticate input.file:before{position:absolute;width:100%;height:100%;content:" ";background-color: $baseBgA;}
+.identity-authenticate input.file:after{position:absolute;width:100%;height:3.6rem;line-height: 3.6rem;content:"点击上传图片";background-color: $baseBgB;bottom:0;left:0;color:$txtColorD;text-align: center;font-size: 1.6rem;}
+.identity-authenticate .mod-tips p{line-height: 1.5em;color:$txtColorB;text-align: left;}
+
+/*我的课程*/
+.my-course .mod-tips p{padding:0 1rem;text-align: left;line-height: 1.5em;}
+.my-course .course-time > p{font-size: 1.2rem;line-height: 1.5em;}
+.my-course .course-time .card-cont{margin-top: 1.5rem;}
+
+/*新订单*/
+.new-order .order-box .order-item{border-bottom: 0;}
+.new-order .order-box .plus{position:static;-webkit-transform: translate(0,0);}
+
+/*培训价格*/
+.train-price .price-box{padding: 0 1rem;}
+.train-price .tips{padding:1rem;color:$txtColorB;}
+.train-price .box-col .input{text-align: right}
+.train-price .txt-ar{padding: 0 1rem;margin-bottom: 1.5rem;}
+.train-price .plus{font-size: 1.4rem;}
+
+/*服务范围*/
+.service-range .card-box{padding: 0 1rem;}
+.service-range .tips{padding:1.5rem 1rem;}
+.service-range .li-item .box-col,
+.service-range .li-item .box-col .input{text-align: right;margin-right: 2.8rem;}
+.service-range .li-item .li-item:first-child{padding: 0 0 1.5rem;border-bottom: 0;}
+.service-range .li-item .li-item:last-child{margin-left: 5.6rem;padding: 1.5rem 0 0;border-top:1px solid $lineColorB;}
+.service-range .service-set .li-item{padding:1rem 0;}
+.service-range .service-set .li-item .tit{line-height: 3.2rem;}
+.service-range .service-set .li-item .box-col{height:3.2rem;margin-right: 0;}
+
+/*我的钱包*/
+.my-wallet .price-box{padding: 0 1rem;}
+.my-wallet .tips{padding:1rem;color:$txtColorB;}
+.my-wallet .li-item .box-col{text-align: right;}
+.my-wallet .box-col .input{text-align: right}
+.my-wallet .plus{font-size: 1.4rem;}
+
+/*收款设置*/
+.income-set .card-box{padding: 0 1rem;}
+.income-set .tips{padding:1.5rem 1rem;}
+.income-set .li-item .box-col{margin-right: 5.6rem;}
+.income-set .li-item .box-col .input{text-align: right;}
+.income-set .li-item .li-item{padding: 0 0 1.5rem;border-bottom: 0;}
+.income-set .li-item .li-item:nth-child(2),
+.income-set .li-item .li-item:last-child{margin-left: 8.4rem;padding: 1.5rem 0;border-top:1px solid $lineColorB;}
+.income-set .li-item .li-item:last-child{padding:1.5rem 0 0;}
+
+/*我的相册*/
+.my-photo .card-box{padding-top: 2.3rem;}
+.my-photo .box-col{height:5rem;padding:0 1.3rem;margin-bottom: 1.2rem;overflow:hidden;}
+.my-photo .box-col img{width:100%;}
+.my-photo input.file{position:relative;width:100%;height:100%;vertical-align: top;}
+.my-photo input.file:after{position:absolute;display:block;width:100%;height:100%;top:0;left:0;content:"+新照片";background-color: #dedede;color:#fff;text-align: center;line-height: 5rem;font-size: 1.4rem;}

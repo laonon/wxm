@@ -1,0 +1,154 @@
+/* 框架 */
+.wrapper {
+	min-height:100%;
+	overflow: hidden;
+}
+.wrapper .scrollable {
+	padding-bottom: 3rem;
+}
+.header-cover {
+	background-color: $baseBgE;
+}
+.header,
+.footer {
+	text-align: center;
+	text-align: center;
+	z-index: 10;
+}
+
+/* 顶导 */
+.header {
+	width: 100%;
+	text-align: left;
+	background-color: $baseBgA;
+	border-bottom: 1px solid $lineColorA;
+}
+.header .inner {
+	color: $txtColorD;
+	height: 4.4rem;
+}
+.header .opt-l,
+.header .opt-r {
+	display: block;
+	width: 4.4rem;
+	height: 4.4rem;
+	line-height: 4.4rem;
+	text-align: center;
+	cursor: pointer;
+}
+.header .opt-r{
+	color:$txtColorE;
+}
+.header .opt-l .angle-left{
+	font-size: 2.8rem;
+}
+.header .title {
+	font-size: 1.6rem;
+	line-height: 4.4rem;
+	height: 4.4rem;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: $txtColorA;
+}
+.header .icon {
+	color: $txtColorE;
+}
+.header a {
+	color: $txtColorD;
+}
+
+/* 底导 */
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1.6rem 1rem;
+	z-index: 99;
+	border-top: 1px solid $lineColorA;
+}
+.footer .icon {
+	color: $txtColorB;
+	font-size: 3rem;
+}
+.footer .input {
+	height: 3.6rem;
+	line-height: 3.6rem;
+}
+.footer .opt-box {
+	padding-left: 1rem;
+}
+.footer .opt-box .btn {
+	width: 6rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	padding: 0;
+}
+
+/* 弹性布局(单行) */
+.layout-flexbox {
+	@include flexbox;
+}
+.layout-flexbox .box-col {
+	@include flex;
+}
+.layout-flexbox .box-row {
+	@include flexDirection(column);
+}
+.layout-flexbox .box-center-h {
+	@include justifyContent(center);
+}
+.layout-flexbox .box-center-v {
+	@include alignItems(center);
+}
+.layout-flexbox .plus {
+	@include flexbox;
+	@include alignItems(center);
+	@include justifyContent(center);
+}
+
+/* 弹性布局（多行）【没用display:inline-block，因为在某些安卓浏览器上空白字符靠传统方式去不掉，只能从模板去除】 */
+.layout-gridbox:before,
+.layout-gridbox:after {
+	display: table;
+	content: "";
+}
+.layout-gridbox:after {
+	clear: both;
+}
+.layout-gridbox .box-col {
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+}
+.layout-gridbox.col-1 .box-col {
+	width: 100%;
+}
+.layout-gridbox.col-2 .box-col {
+	width: 50%;
+}
+.layout-gridbox.col-3 .box-col {
+	width: 33.3333333%;
+}
+.layout-gridbox.col-4 .box-col {
+	width: 25%;
+}
+.layout-gridbox.col-5 .box-col {
+	width: 20%;
+}
+.layout-gridbox.col-6 .box-col {
+	width: 16.6666667%;
+}
+.layout-gridbox.col-7 .box-col {
+	width: 14.2857143%;
+}
+.layout-gridbox.col-8 .box-col {
+	width: 12.5%;
+}
+.layout-gridbox.col-9 .box-col {
+	width: 11.1111111%;
+}
+.layout-gridbox.col-10 .box-col {
+	width: 10%;
+}

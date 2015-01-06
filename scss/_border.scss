@@ -1,0 +1,62 @@
+/* 基础card外框 */
+.line-all{
+  background-color: #fff;
+  border-radius: 1px;
+  border: 1px solid $lineColorA;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,.15); 
+}
+.line-all .line-all {
+  box-shadow: none;
+}
+.line-right,
+.line-separate::before {
+  border-right: 1px solid $lineColorA;
+}
+.line-left {
+  border-left: 1px solid $lineColorA;
+}
+.line-top {
+  border-top: 1px solid $lineColorA;
+}
+.line-bottom,
+.line-separate::after{
+  border-bottom: 1px solid $lineColorA;
+}
+.line-separate::before {
+  position: absolute;
+  right: -1px;
+  top: 10%;
+  content: ' ';
+  width: 1px;
+  height: 80%;
+}
+.line-separate::after {
+  position: absolute;
+  left: 10%;
+  bottom: -1px;
+  content: ' ';
+  width: 80%;
+  height: 1px;
+}
+
+// @include dpiGet(best) {
+//   .line-separate::before {
+//     right: 0;
+//   }
+//   .line-separate::after {
+//     bottom: 0;
+//   }
+// }
+
+.more-detail {
+  margin-top: -1px;
+}
+.more-detail a {
+  display: block;
+  position: relative;
+}
+.more-detail .line-separate:last-child::before {
+  border-right: 0;
+  background: none;
+}

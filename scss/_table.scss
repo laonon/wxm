@@ -1,0 +1,20 @@
+/*表格*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid $lineColorA;
+}
+table td {
+    height: 3.3rem;
+    line-height: 3.3rem;
+    text-align: center;
+    border-color: $lineColorC;
+    vertical-align: middle
+}
+table td.active {
+    color: $txtColorD;
+    background-color: $baseBgE;
+}

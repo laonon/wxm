@@ -1,0 +1,142 @@
+
+/* =============基础元素============== */
+.S-bgA { background-color: $baseBgA; }
+.S-bgB { background-color: $baseBgB; }
+.S-bgC { background-color: $baseBgC; }
+.S-bgD { background-color: $baseBgD; }
+.S-bgE { background-color: $baseBgE; }
+.S-bgF { background-color: $baseBgF; }
+
+/* 基础常用样式 */
+.size-l { width: 7rem; }
+.size-m { width: 6.4rem; }
+.size-s { width: 5rem; }
+.size-xs { width: 3.4rem; }
+.txt-ar{text-align: right;}
+.txt-al{text-align: left;}
+.txt-ac{text-align: center;}
+/*分割线*/
+.line{display:inline-block;padding-left:1rem;height:1em;margin-right: 1rem;border-right-width: 1px;border-right-style: solid;border-right-color: inherit;vertical-align: middle;}
+/*按钮*/
+.btn-box{margin-top: 1.5rem;padding:0 1rem;}
+.btn-box .box-col:first-child{padding-right: 0.5rem;}
+.btn-box .box-col:last-child{padding-left: 0.5rem;}
+.btn-onoff{display:inline-block;width:5.2rem;height:3.2rem;background-color:$baseBgE;border-radius: 1.6rem;}
+.btn-onoff:after,
+.btn-onoff.on:after{display:block;content:" ";width:3rem;height:3rem;background-color: $baseBgA;border-radius: 50%;-webkit-transform: translate(2.1rem,0.1rem);-webkit-transition: -webkit-transform 0.2s ease;}
+.btn-onoff.off:after{-webkit-transform: translate(0.1rem,0.1rem);}
+
+/*提示*/
+.mod-tips{padding:2.4rem 0;text-align: center}
+.mod-tips .icon,
+.mod-tips .tip-txt{vertical-align: middle;font-size: 2.4rem;text-align: left;}
+.mod-tips .tip-txt{font-size: 1.6rem;}
+
+/*加减组件*/
+.mod-modified .minus-sign,
+.mod-modified .plus-sign{display:inline-block;width:3.2rem;height:3.2rem;text-align: center;line-height: 3rem;vertical-align: middle;color:$txtColorB;}
+.mod-modified .minus-sign{margin-right: 0.3rem;}
+.mod-modified .plus-sign{margin-left: 0.3rem;}
+.mod-modified .input{width:6rem;text-align: center;border-radius: 0;vertical-align: middle;}
+
+/* 无序行内列表【因为inline-block元素间需要手动清掉空白字符所以用浮动实现】 */
+ul.inline:before,
+ul.inline:after,
+ol.inline:before,
+ol.inline:after{display:table;height:0;content:"";visibility: hidden;}
+ul.inline:after,
+ol.inline:after{clear:both;}
+ul.inline li ,
+ol.inline li { float:left;width:auto;max-width: auto;min-width: auto;font-size: 1.4rem;margin:0;padding:0;}
+/* 无序块列表 */
+ul.lists li,
+ol.lists li {padding: 0.8rem;background-color: $baseBgA;}
+ul.lists li.arrow,
+ol.lists li.arrow{position:relative;}
+ul.lists li.arrow:before,
+ol.lists li.arrow:before { position: absolute; content: " "; width: 1rem; height: 1rem; border-right: 2px solid $lineColorA; border-top: 2px solid $lineColorA; -webkit-transform: rotate(45deg); transform: rotate(45deg); right: 1.2rem; top: 50%; margin-top: -0.7rem; }
+
+/* 图文混排模块 */
+.media-graphic {position:relative;}
+.media-graphic .mod-media .media-main{
+	position: relative;width:6rem;height:6rem;padding:0.2rem;border:1px solid $lineColorB;text-align: center;border-radius: 0.3rem;}
+.media-graphic .mod-media .media-main img{width:100%;height:100%;border-radius: 0.2rem; }
+.media-graphic .mod-media.radius .media-main,
+.media-graphic .mod-media.radius .media-main img{border-radius: 50%;}
+.media-graphic .mod-media .icon { position: absolute; right: -0.5rem; bottom: -0.5rem; }
+.media-graphic .mod-media img { display: block; vertical-align: top; }
+.media-graphic .mod-media .media-txt { display: block; width: 3.4rem; height: 1.6rem; line-height: 1.6rem; margin-top: 0.5rem;font-size: 1rem; text-align: center;}
+.media-graphic .item-list {padding-left: 1rem;}
+.media-graphic .item-main { font-weight: bold; line-height: 1.2em; overflow: hidden;font-size: 1.5rem; }
+.media-graphic .item-main .btn { vertical-align: bottom; margin: 0 0 0 0.6rem; }
+.media-graphic .item-minor,
+.media-graphic .item-other { padding: 0.8rem 0 0; line-height: 1.2em;font-size: 1.2rem;color:$txtColorB; }
+.media-graphic .item-main > *,
+.media-graphic .item-minor > *,
+.media-graphic .item-other > *{vertical-align: middle;margin-right: 0.3rem;} 
+.media-graphic .opt-t{position:absolute;top: 0;right: 0;font-size: 1.4rem;}
+.media-graphic .opt-b{position:absolute;bottom: 0;right: 0;}
+.media-graphic .plus{width:4.4rem;text-align: center;color:$txtColorB;font-size: 2rem;}
+
+/* 气泡 */
+.bubble { display: inline-block; }
+.bubble-blue { width: 2.4rem; height: 1.3rem; line-height: 1.3rem; background-color: #61c3fc; border-radius: 2px; color:$txtColorD; overflow: hidden }
+.bubble-dot-red { min-width: 1.6rem; padding: 0 0.5rem; height: 1.6rem; line-height: 1.6rem; text-align: center; border-radius: 50%; background-color: #fe6431; color:$txtColorD; box-sizing: border-box; text-align: center; }
+
+/* 搜索 */
+.search-box{box-sizing:border-box;width:100%;height:4.8rem;padding:0.8rem;border-radius: 2px;}
+
+/*筛选条*/
+.tab-bar{height:3.4rem;line-height: 3.4rem;border-top:1px solid $lineColorA;border-bottom:1px solid $lineColorA;}
+.tab-bar .tab-tit{position:relative;text-align: center;font-size: 1.4rem;}
+.tab-bar .tab-tit .icon{margin-left: 0.5rem;color:$txtColorB;vertical-align: middle;}
+.tab-bar .tab-tit.active,
+.tab-bar .tab-tit.active .icon{color:$txtColorE;}
+.tab-bar .tab-tit:after{position:absolute;content:" ";right:0;top:50%;height:50%;width:0;border-right: 2px solid $lineColorC;-webkit-transform: translateY(-50%);}
+.tab-bar .tab-tit:last-child:after{display:none;}
+.tab-content{border-bottom: 1px solid $lineColorA;}
+.tab-content .sub-option{width:40%;}
+.tab-content .sub-option li{padding:1.3rem 0 1.3rem 2.8rem;background-color: $baseBgC;}
+.tab-content .sub-option li.active{background-color:$baseBgA; }
+.tab-content .option-cont{background-color: $baseBgA;}
+.tab-content .option-cont .li-cont{display:none;}
+.tab-content .option-cont .li-cont.active{display:block;}
+.tab-content .option-cont .li-cont li{padding:1.3rem 0 1.3rem 4.5rem;}
+
+/*标签*/
+.tag{display: inline-block;padding: 0.3rem 0.6rem;border-radius: 1.4rem;background-color: #ececec;color: $txtColorB;font-size: 1.2rem;}
+.tag-a{display:inline-block;padding:0.1rem 0.5rem;background-color: #cfe4fc;color:#4882c2;border-radius: 0.3rem;font-size: 1.2rem;}
+.tag-b{display:inline-block;padding:0.1rem 0.3rem;background-color: #4882c2;color:#fff;border-radius: 0.3rem;font-size: 1rem;}
+
+/*附加*/
+.plus{position:absolute;right:0;top:50%;-webkit-transform: translateY(-50%);}
+
+/*分割*/
+.intend{padding-left: 1rem;}
+.pretend{padding-right: 1rem;}
+
+/*条目栏*/
+.li-item{position:relative;padding: 1.5rem 0;border-bottom: 1px solid $lineColorB;}
+.li-item:first-child{}
+.li-item:last-child{border-bottom: 0;}
+.li-item .tit{min-width:5.6rem;line-height: 2.3rem;color:$txtColorB;}
+.li-item > .box-col{padding-left: 3rem;line-height: 2.3rem;}
+.li-item > .cont{margin-top: 1.5rem;}
+.li-item .input{height:2.3rem;line-height: 2.3rem;border:0;padding:0 0.5rem;}
+.li-item .plus{position:static;color: gray;font-size: 2rem;-webkit-transform: translateY(0);}
+
+/*服务信息*/
+.service-info{margin-top: 3rem;line-height: 1.5em;text-align: center;}
+
+/*模块框架*/
+.card-box{margin-bottom: 1.2rem;padding:1rem;background-color: $baseBgA;}
+.card-box:first-child{margin-top: 1rem;}
+.card-box h3.card-tit{font-size: 1.7rem;color:$txtColorA;padding-bottom: 1.5rem;}
+.card-box h4.card-tit{font-size: 1.4rem;color:$txtColorB;padding-bottom: 1.5rem;}
+
+/*弹层*/
+.W-layer{position:absolute;position:fixed;width:100%;height:100%;top:0;right:0;bottom:0;left:0;background-color: rgba(0,0,0,0.3);}
+.W-layer .inner{position:absolute;padding:2rem 2rem 1.5rem;background-color: $baseBgA;border-radius: 0.3rem;min-width: 21.5rem;left:50%;top:50%;-webkit-transform: translate(-50%,-50%);}
+.W-layer .layer-content{padding:1.8rem 0;}
+.W-layer .layer-btn {text-align: center;}
+.W-layer .layer-btn .btn{display:inline-block;height:3rem;line-height: 3rem;width:15rem;}
